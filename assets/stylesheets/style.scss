@@ -41,34 +41,15 @@ a.all {
     display: block;
 }
 
-.toxu-info hr.hr {
+hr {
     width: 70%;
     margin-left: 25px;
 }
 
-.toxu-info {
-    font-size: 12px;
-    color: #919191;
-  .info-soc {
-      margin-right: 8px;
-  }    
-   a {
-      color: #919191;
-  }
-
-  .toxu-info-soc {
-      margin-bottom: 6px;
-  }
-
 }
 
-}
 .container.list-container {
     width: calc(100% - 231px);
     float: right;
     border-left: 1px solid #d6d9dc;
-}
-
-ol.category-breadcrumb, .list-controls .nav {
-    display: none;
 }
