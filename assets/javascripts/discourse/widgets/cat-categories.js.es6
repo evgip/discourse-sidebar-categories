@@ -101,7 +101,7 @@ if (!this.currentUser) {
     uinfo = ' — <a class="info-soc my" href="https://toxu.ru/u/'+ username +'/summary">'+ username +'</a>';
     } else { uinfo = '  '; }  
  
- 
+// result.push(self.attach('sidebar-custom-content'));
  result = result.concat(
        
  	  new RawHtml({ html: `<div class="toxu-info"><hr class="hr">
