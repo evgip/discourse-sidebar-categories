@@ -1,6 +1,7 @@
 .sidebar {
-    width: 19%;
+    width: 230px;
     float: left;
+    margin-top: 6px;
     
 .widget-link.active {
     background: #f6f8fe;
@@ -16,7 +17,9 @@ a.widget-link {
 .zag {
     margin: 12px 0 6px 7px;
 }
-
+a.all {
+    color: #919191;
+}
 
 .oglavl {
     display: inline-block;
@@ -61,8 +64,9 @@ a.widget-link {
 
 }
 .container.list-container {
-    width: 80%;
+    width: calc(100% - 231px);
     float: right;
+    border-left: 1px solid #d6d9dc;
 }
 
 ol.category-breadcrumb, .list-controls .nav {
