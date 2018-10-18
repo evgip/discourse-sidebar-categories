@@ -1,7 +1,6 @@
 import { createWidget } from 'discourse/widgets/widget';
 import { h } from 'virtual-dom';
 import { number } from 'discourse/lib/formatter';
-import RawHtml from 'discourse/widgets/raw-html';
 
 createWidget('cat-category', {
   tagName: 'div.cat-link',
@@ -49,23 +48,17 @@ createWidget('cat-category', {
  
 });
 
-
 export default createWidget('cat-categories', {
   tagName: 'div.category-links.clearfix',
 
   html(attrs) {
+    let title = I18n.t("filters.categories.title");
+    if (attrs.moreCount > 0) {
+      title += I18n.t("categories.more", { count: attrs.moreCount });
+    }
 
-  let result = [  ];
+    let result = [  ];
     
-  var href = Discourse.getURL("/categories");
-  result = result.concat(
-        h(
-          "div.zagall",
-          h(
-            "a.all",
-            { attributes: { href } }, "Все")
-        )
-   ); 		  
     
     result = result.concat(
         h(
@@ -74,7 +67,7 @@ export default createWidget('cat-categories', {
             "div.oglavl", "Мои разделы")
         )
      ); 
-    
+ 
     const categories = attrs.categories;
     if (categories.length === 0) {
       return;
@@ -82,7 +75,7 @@ export default createWidget('cat-categories', {
     result = result.concat(
       categories.map(c => this.attach("cat-category", c))
     );
- 
+
     return result;
   }
 });
