@@ -66,7 +66,15 @@ export default createWidget('cat-categories', {
             { attributes: { href } }, "Все")
         )
    ); 		  
-
+    
+    result = result.concat(
+        h(
+          "div.zag",
+          h(
+            "div.oglavl", "Мои разделы")
+        )
+     ); 
+    
     const categories = attrs.categories;
     if (categories.length === 0) {
       return;
