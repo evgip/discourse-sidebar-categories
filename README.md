@@ -13,7 +13,7 @@ Adds categories to the left side of the site and html arbitrary code.
 
 Additionally using: `/admin/customize/themes` - we change the design of the posts themselves.
 
-
+(Some design topics will be published later)
 
 ## How to Install this Plugin
 
