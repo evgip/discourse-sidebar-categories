@@ -1,4 +1,11 @@
 # discourse-toxu-theme
-about: design site Toxu.ru
-version: 0.1
-authors:  Evg
+
+
+Adds categories to the left side of the site and html arbitrary code.
+
+
+<img class="mfp-img" alt="sidebar" src="https://toxu.ru/uploads/default/original/2X/f/f9ca3533b012cafd9e4fe281304e056b3f953f47.jpeg" style="max-height: 589px;">
+
+
+
+<img class="mfp-img" alt="sidebar-2" src="https://toxu.ru/uploads/default/original/2X/5/5f952b888e2ec000d5d0c1df7dafaf08df32dd8c.jpeg" style="max-height: 589px;">
