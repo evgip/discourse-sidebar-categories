@@ -1,0 +1,4 @@
+ru:
+  site_settings:
+    sidebar_enable: "Показывать боковую панель на экране слева."
+    sidebar_custom_content: "Введите HTML код, который вы хотите видеть под категориями."
