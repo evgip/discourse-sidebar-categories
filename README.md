@@ -13,3 +13,13 @@ Adds categories to the left side of the site and html arbitrary code.
 
 Additionally using: `/admin/customize/themes` - we change the design of the posts themselves.
 
+
+
+## How to Install this Plugin
+
+To install Discourse Plugin - https://meta.discourse.org/t/install-a-plugin/19157
+
+
+# License
+
+MIT
