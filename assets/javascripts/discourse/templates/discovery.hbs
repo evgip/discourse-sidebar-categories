@@ -11,7 +11,7 @@
 {{conditional-loading-spinner condition=loading}}
 
 <div class="sidebar"> 
-{{mount-widget widget="sidebar-cat" args=(hash cslug=category.slug)}}
+{{mount-widget widget="sidebar" args=(hash cslug=category.slug)}}
 </div>
 
 <div class="container list-container {{if loading "hidden"}}">
