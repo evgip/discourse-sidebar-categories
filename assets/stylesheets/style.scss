@@ -2,25 +2,18 @@
     width: 230px;
     float: left;
     margin-top: 6px;
-    
 .widget-link.active {
     background: #f6f8fe;
     border-right: 3px solid #F48024;
 }    
-
 a.widget-link {
     display: block;
     margin-bottom: 4px;
     padding: 4px;
 }
-
 .zag {
     margin: 12px 0 6px 7px;
 }
-a.all {
-    color: #919191;
-}
-
 .oglavl {
     display: inline-block;
     color: #919191;
@@ -28,26 +21,17 @@ a.all {
     font-weight: 400;
     margin-bottom: 6px;
 }
-
-.zagall {
-    margin: 14px 10px 1px 7px;
-    float: right;
-}
-
 .cat-link {
     margin: 0 0 9px 8px;
     font-size: 16px;
     position: relative;
     display: block;
 }
-
 hr {
     width: 70%;
     margin-left: 25px;
 }
-
 }
-
 .container.list-container {
     width: calc(100% - 231px);
     float: right;
