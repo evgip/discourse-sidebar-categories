@@ -2,3 +2,6 @@ plugins:
   sidebar_enable:
     default: false
     client: true
+  sidebar_custom_content:
+    type: text
+    default: ''
