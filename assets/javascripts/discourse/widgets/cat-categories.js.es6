@@ -67,26 +67,6 @@ export default createWidget('cat-categories', {
         )
    ); 		  
 
-	  
-if (!this.currentUser) {  
-    result = result.concat(
-        h(
-          "div.zag",
-          h(
-            "div.oglavl", "Разделы" )
-        )
-     );  
- } else { 
-    result = result.concat(
-        h(
-          "div.zag",
-          h(
-            "div.oglavl", "Мои разделы")
-        )
-     ); 
-} 
- 
-	  
     const categories = attrs.categories;
     if (categories.length === 0) {
       return;
@@ -95,29 +75,6 @@ if (!this.currentUser) {
       categories.map(c => this.attach("cat-category", c))
     );
  
-    var uinfo;
-    if (this.currentUser) { 
-    var username = this.currentUser.get('username');
-    uinfo = ' — <a class="info-soc my" href="https://toxu.ru/u/'+ username +'/summary">'+ username +'</a>';
-    } else { uinfo = '  '; }  
- 
-// result.push(self.attach('sidebar-custom-content'));
- result = result.concat(
-       
- 	  new RawHtml({ html: `<div class="toxu-info"><hr class="hr">
-      <div class="toxu-info-soc">
-      <a class="info-soc" target="_blank" href="https://toxu.ru/about">О нас</a> 
-      <a class="info-soc" target="_blank" href="https://toxu.ru/help">Помощь</a> 
-      <a class="info-soc" target="_blank" href="https://toxu.ru/qa">Писатели</a>
-
-      </div>
-      ©  2018 «Toxu»  ${uinfo}
-      </div>`}) 
-	   
-	   
-     ); 
-
-
     return result;
   }
 });
