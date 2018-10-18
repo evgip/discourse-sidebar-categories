@@ -1,0 +1,4 @@
+en:
+  site_settings:
+    sidebar_enable: "Show sidebar on the left list screens."
+    sidebar_custom_content: "Custom HTML content. To show this, you must include 'custom_html' in block list above."
