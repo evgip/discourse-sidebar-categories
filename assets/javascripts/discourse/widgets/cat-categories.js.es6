@@ -54,7 +54,7 @@ export default createWidget('cat-categories', {
   html(attrs) {
     let title = I18n.t("filters.categories.title");
     if (attrs.moreCount > 0) {
-      title += I18n.t("categories.more", { count: attrs.moreCount });
+     // title += I18n.t("categories.more", { count: attrs.moreCount });
     }
 
     let result = [  ];
@@ -64,7 +64,7 @@ export default createWidget('cat-categories', {
         h(
           "div.zag",
           h(
-            "div.oglavl", "Мои разделы")
+            "div.oglavl", title)
         )
      ); 
  
