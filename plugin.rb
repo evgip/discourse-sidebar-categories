@@ -1,4 +1,4 @@
-# name: discourse-toxu-theme
+# name: discourse-toxu-sidebar
 # about: design site Toxu.ru
 # version: 0.1
 # authors:  Evg
