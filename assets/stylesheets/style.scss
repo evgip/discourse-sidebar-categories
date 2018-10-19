@@ -1,7 +1,8 @@
 .sidebar {
     width: 230px;
     float: left;
-    margin-top: 6px;
+    margin-top: 4px;
+    
 .widget-link.active {
     background: #f6f8fe;
     border-right: 3px solid #F48024;
@@ -14,9 +15,19 @@ a.widget-link {
 .zag {
     margin: 12px 0 6px 7px;
 }
+
+.badge-wrapper.bullet .badge-category-bg {
+    display: none;
+}
+.badge-wrapper {
+    font-weight: normal;
+}
+.widget-link.active i.fa, a.widget-link:hover, .badge-wrapper.bullet span.badge-category:hover {
+    color: #e45735;
+}
 .oglavl {
     display: inline-block;
-    color: #919191;
+    color: #666;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 6px;
@@ -31,8 +42,11 @@ hr {
     width: 70%;
     margin-left: 25px;
 }
+.sidebar-custom-content {
+    color:#666;
 }
-.container.list-container {
+}
+.container.list-container.has-sidebar {
     width: calc(100% - 231px);
     float: right;
     border-left: 1px solid #d6d9dc;
