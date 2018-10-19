@@ -14,7 +14,7 @@ Adds categories to the left side of the site and html arbitrary code.
 **After installing the theme of the design, classic**
 
 
-<img alt="toxu" src="https://toxu.ru/uploads/default/original/2X/a/ae0113fd8d825465839427ea123d280e7048b81f.png">
+<img alt="toxu" src="https://toxu.ru/uploads/default/original/2X/8/80f0d6321d0f1b11d4408f317ffad9345cccef88.png">
 
 
 Classic theme: https://github.com/Toxuru/discourse-classic-theme
