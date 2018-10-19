@@ -15,7 +15,16 @@ a.widget-link {
 .zag {
     margin: 12px 0 6px 7px;
 }
-
+a.widget-link i.fa {
+    margin: 2px 5px 0 4px;
+    position: absolute;
+    font-size: 17px;
+}
+.cat-panel .my-menu .my-menu span {
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 40px;
+}
 .badge-wrapper.bullet .badge-category-bg {
     display: none;
 }
