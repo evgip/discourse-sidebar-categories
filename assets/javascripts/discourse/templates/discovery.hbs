@@ -10,11 +10,13 @@
 
 {{conditional-loading-spinner condition=loading}}
 
-<div class="sidebar"> 
-{{mount-widget widget="sidebar" args=(hash cslug=category.slug)}}
-</div>
+{{#if siteSettings.sidebar_enable}}
+  <div class="sidebar"> 
+     {{mount-widget widget="sidebar" args=(hash cslug=category.slug)}}
+  </div>
+{{/if}}
 
-<div class="container list-container {{if loading "hidden"}}">
+<div class="container list-container {{if loading "hidden"}} {{if siteSettings.sidebar_enable "has-sidebar"}}">
   <div class="row">
     <div class="full-width">
       <div id="header-list-area">
