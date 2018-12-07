@@ -8,7 +8,7 @@ Adds categories to the left side of the site and html arbitrary code.
 
 
 
-<img class="mfp-img" alt="toxu" src="https://toxu.ru/uploads/default/original/2X/3/3b0b51147235d28383b13696c015e01fc1fb6b4b.jpeg" style="max-height: 589px;">
+<img class="mfp-img" alt="toxu" src="https://toxu.ru/uploads/default/original/2X/6/6c3d88c1d2b0c831dbfae1a364befc8c483ca8c8.png">
 
 
 **After installing the theme of the design, classic**
