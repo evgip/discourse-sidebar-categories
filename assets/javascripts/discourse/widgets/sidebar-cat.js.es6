@@ -9,8 +9,7 @@ const flatten = array => [].concat.apply([], array);
 export default createWidget('sidebar-cat', {
   tagName: 'div.cat-panel',
 
-
-   lookupCount(type) {
+  lookupCount(type) {
     const tts = this.register.lookup("topic-tracking-state:main");
     return tts ? tts.lookupCount(type) : 0;
   },
@@ -22,82 +21,18 @@ export default createWidget('sidebar-cat', {
     return true;
   },
 
-  generalLinks() {
-    const { siteSettings } = this;
-    const links = [];
-    var activ = document.location.pathname;
-  
-    links.push({
-      route: "discovery.latest",
-      className: "latest-topics-link " + ((activ == '/latest') ? "active" : "") + ((activ == '/') ? "active" : ""),
-      label: "filters.latest.title",
-      title: "filters.latest.help",
-      icon: "newspaper-o"
-    });
-
-    if (this.currentUser) {
-      links.push({
-        route: "discovery.new",
-        className: "new-topics-link " + ((activ == '/new') ? "active" : ""),
-        labelCount: "filters.new.title_with_count",
-        label: "filters.new.title",
-        title: "filters.new.help",
-        count: this.lookupCount("new"),
-      icon: "braille"
-      });
-
-      links.push({
-        route: "discovery.unread",
-        className: "unread-topics-link " + ((activ == '/unread') ? "active" : ""),
-        labelCount: "filters.unread.title_with_count",
-        label: "filters.unread.title",
-        title: "filters.unread.help",
-        count: this.lookupCount("unread"),
-      icon: "object-ungroup"
-      });
-    }
-
-
-    links.push({
-      route: "discovery.top",
-      className: "top-topics-link "  + ((activ == '/top') ? "active" : ""),
-      label: "filters.top.title",
-      title: "filters.top.help",
-      icon: "free-code-camp"
-    });
-
-    const extraLinks = flatten(
-      applyDecorators(this, "generalLinks", this.attrs, this.state)
-    );
-    return links.concat(extraLinks).map(l => this.attach("link", l));
-},
- 
   panelContents() {
     const { currentUser } = this;
     const results = [];
 
-  
-    results.push(
-      this.attach("cat-panel", {
-        name: "general-links",
-        contents: () => this.generalLinks()
-      })
-    );
-
-
-results.push(this.listCategories());
+    results.push(this.listCategories());
 
     return results;
   },
  
-
   listCategories() {
 
-    if (!this.currentUser) {
-       var maxCategoriesToDisplay = 28;
-    } else {
-       var maxCategoriesToDisplay = 14;
-    }  
+    var maxCategoriesToDisplay = 28;
     
     let categories = this.site.get("categoriesByCount");
 
@@ -145,11 +80,9 @@ results.push(this.listCategories());
     return this.attach("cat-categories", { categories, moreCount, cslug });
 },
 
-
- html() {
+  html() {
     if (this.site.mobileView)
     return; 
-	  
     return this.attach('cat-panel', { contents: () => this.panelContents() });
   },
 
