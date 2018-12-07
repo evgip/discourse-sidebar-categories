@@ -3,36 +3,8 @@
     float: left;
     margin-top: 4px;
     
-.widget-link.active {
-    background: #f6f8fe;
-    border-right: 3px solid #F48024;
-}    
-a.widget-link {
-    display: block;
-    margin-bottom: 4px;
-    padding: 4px;
-}
 .zag {
-    margin: 12px 0 6px 7px;
-}
-a.widget-link i.fa {
-    margin: 2px 5px 0 4px;
-    position: absolute;
-    font-size: 17px;
-}
-.cat-panel .my-menu .my-menu span {
-    font-size: 14px;
-    vertical-align: middle;
-    margin-left: 40px;
-}
-.badge-wrapper.bullet .badge-category-bg {
-    display: none;
-}
-.badge-wrapper {
-    font-weight: normal;
-}
-.widget-link.active i.fa, a.widget-link:hover, .badge-wrapper.bullet span.badge-category:hover {
-    color: #e45735;
+    margin: 12px 0 6px 0;
 }
 .oglavl {
     display: inline-block;
@@ -42,7 +14,7 @@ a.widget-link i.fa {
     margin-bottom: 6px;
 }
 .cat-link {
-    margin: 0 0 9px 8px;
+    margin: 0 0 9px 0;
     font-size: 16px;
     position: relative;
     display: block;
