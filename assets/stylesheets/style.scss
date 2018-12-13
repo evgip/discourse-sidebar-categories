@@ -27,8 +27,20 @@ hr {
     color:#666;
 }
 }
+
 .container.list-container.has-sidebar {
     width: calc(100% - 221px);
     float: right;
     border-left: 1px solid #d6d9dc;
+}
+
+body.navigation-categories  {
+	.sidebar {
+    display: none;
+    }
+	
+	.container.list-container.has-sidebar {
+    width:100%;
+    border-left: none;
+    }
 }
