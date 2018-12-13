@@ -32,7 +32,8 @@ export default createWidget('sidebar-cat', {
  
   listCategories() {
 
-    var maxCategoriesToDisplay = 28;
+       const maxCategoriesToDisplay = this.siteSettings
+            .header_dropdown_category_count;
     
     let categories = this.site.get("categoriesByCount");
 
