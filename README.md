@@ -1,4 +1,4 @@
-# discourse-toxu-sidebar
+# discourse-sidebar-categories
 
 
 Adds categories to the left side of the site and html arbitrary code.
