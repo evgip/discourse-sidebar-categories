@@ -23,6 +23,7 @@ Classic theme: https://github.com/Toxuru/discourse-classic-theme
 
 To install Discourse Plugin - https://meta.discourse.org/t/install-a-plugin/19157
 
+The plugin was not intended to work on the mobile version. 
 
 # License
 
