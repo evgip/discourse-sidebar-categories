@@ -1,5 +1,5 @@
 .sidebar {
-    width: 125px;
+   /* width: 125px;  */
     float: left;
     margin-top: 4px;
     
@@ -29,7 +29,7 @@ hr {
 }
 
 .container.list-container.has-sidebar {
-    width: 125px;
+    width: calc(100% - 120px);
     float: right;
     
 }
