@@ -1,5 +1,5 @@
 .sidebar {
-    width: 125px;
+    width: 115px;
     float: left;
     margin-top: 4px;
     
@@ -29,7 +29,7 @@ hr {
 }
 
 .container.list-container.has-sidebar {
-    width: calc(100% - 221px);
+    width: 115px;
     float: right;
     border-left: 1px solid #d6d9dc;
 }
@@ -48,7 +48,7 @@ body.navigation-categories  {
     margin-left: 10px;
 }
 
-@media (max-width: 820px){
+@media (max-width: 520px){
 	
   .sidebar {
     display: none;
