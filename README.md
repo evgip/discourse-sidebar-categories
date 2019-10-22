@@ -6,7 +6,6 @@ Adds categories to the left side of the site and html arbitrary code.
 
 <img class="mfp-img" alt="sidebar" src="https://toxu.ru/uploads/default/original/2X/2/2ef863e26a3c007bb1581d436a259c003e37053a.jpeg" style="max-height: 589px;">
 
-![test](https://toxu.ru/uploads/default/original/2X/6/6c3d88c1d2b0c831dbfae1a364befc8c483ca8c8.png) 
 
 <img class="mfp-img" alt="toxu" src="https://toxu.ru/uploads/default/original/2X/6/6c3d88c1d2b0c831dbfae1a364befc8c483ca8c8.png">
 
