@@ -12,9 +12,8 @@ export default createWidget('sidebar', {
     const result = [];
     var self = this;
 
-		result.push(self.attach('sidebar-cat'));
-		
-        result.push(self.attach('sidebar-custom-content'));
+	result.push(self.attach('sidebar-cat'));
+	result.push(self.attach('sidebar-custom-content'));
         
     return result;
   },
